@@ -1,0 +1,28 @@
+.card {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 1rem 0.5rem;
+  transition: all 200ms linear;
+}
+
+.card-name {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.card-email {
+  font-size: 0.825rem;
+  color: rgb(98, 98, 98);
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: rgb(45, 45, 45);
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card:hover .card-email {
+  color: #fff;
+}

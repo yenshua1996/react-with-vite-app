@@ -1,0 +1,27 @@
+.nav-container {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.nav-logo {
+  font-size: 1.25rem;
+}
+
+.nav-controller {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.route-link {
+  text-decoration: none;
+  color: #444;
+}
