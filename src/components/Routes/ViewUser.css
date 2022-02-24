@@ -1,0 +1,29 @@
+.user-container {
+  padding: 1rem 0;
+}
+
+.user-heading {
+  padding: 2rem 0;
+}
+
+.user-name {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.user-email {
+  font-size: 1.5rem;
+  color: rgb(110, 110, 110);
+}
+
+.user-website {
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.user-phone {
+  font-weight: 600;
+  color: #444;
+}

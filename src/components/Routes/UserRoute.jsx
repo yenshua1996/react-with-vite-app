@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import User from "../User";
 import "./UserRoute.css";
 
@@ -14,8 +15,6 @@ const UserRoute = () => {
 
       const users = await response.json();
 
-      console.log(users);
-
       setUsers(users);
     };
 
@@ -27,7 +26,13 @@ const UserRoute = () => {
       <div className="card-grid">
         {!users.length && <h4>Loading!</h4>}
         {users.map((user) => (
-          <User user={user} key={user.id} />
+          <Link
+            to={`/user/${user.id}`}
+            style={{ textDecoration: "none", color: "#444" }}
+            key={user.id}
+          >
+            <User user={user} />
+          </Link>
         ))}
       </div>
     </>
